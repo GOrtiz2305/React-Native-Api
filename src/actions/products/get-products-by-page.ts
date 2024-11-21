@@ -3,7 +3,7 @@ import type { ProductsResponse } from "../../infraestructure/interfaces/back-pro
 import type { Product } from "../../domain/entities/product";
 import { ProductMapper } from "../../infraestructure/mappers/product.mapper";
 
-export const getProductsByPage = async (page: number, limit: number = 9): Promise<Product[]> => {
+export const getProductsByPage = async (page: number, limit: number = 6): Promise<Product[]> => {
     console.log({ page, limit })
 
     try {
@@ -12,7 +12,6 @@ export const getProductsByPage = async (page: number, limit: number = 9): Promis
         // Access the 'products' array from the response data
         const products = data.products.map(ProductMapper.backProductToEntity);
 
-        console.log(products[0]);
         return products;
     } catch (error) {
         console.error("Unexpected error:", error);

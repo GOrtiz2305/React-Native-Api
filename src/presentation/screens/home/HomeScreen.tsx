@@ -35,8 +35,8 @@ export const HomeScreen = () => {
       <MainLayout
         title="Honey Shop"
         subTitle="Bienvenido a la tienda"
-        rightAction={() => { }}
-        rightActionIcon="plus-outline"
+        rightAction={() => {logout()}}
+        rightActionIcon="log-out-outline" 
       >
         {
           isLoading
