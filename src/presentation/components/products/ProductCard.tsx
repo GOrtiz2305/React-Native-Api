@@ -22,7 +22,7 @@ export const ProductCard = ({ product }: Props) => {
         (product.image === null || product.image === undefined)
           ? (
             <Image
-              source={require('../../../assets/no-product-image.png')}
+              source={require('../../../assets/Miel.png')}
               style={{ width: '100%', height: 200 }}
             />
           )

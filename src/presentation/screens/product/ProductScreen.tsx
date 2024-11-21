@@ -62,7 +62,7 @@ export const ProductScreen = ({ route }: Props) => {
             <ScrollView style={{ flex: 1 }}>
               <Layout>
                 <Image
-                  source={require('../../../assets/no-product-image.png')}
+                  source={require('../../../assets/Miel.png')}
                   style={{ width: '100%', height: 200 }}
                 />
               </Layout>
